@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kimchi | The Nasdaq Shibe</title>
+    <meta
+      name="description"
+      content="Kimchi, the #ChooseMyShibe winner, celebrating her historic Nasdaq appearance and live on Ethereum."
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="./images/logo.jpeg" alt="Kimchi Logo" class="nav-logo" />
+            <span class="logo-text">KIMCHI</span>
+          </div>
+          <div class="nav-links">
+            <a
+              href="https://t.me/kimchieth"
+              target="_blank"
+              class="nav-btn secondary"
+              >Telegram</a
+            >
+            <a
+              href="https://dexscreener.com/ethereum/0x1dc8a75d7d3fce51355f21ccd43702c431672221"
+              target="_blank"
+              class="nav-btn primary"
+              >Dexscreener</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="badge">#ChooseMyShibe Winner</div>
+          <h1 class="hero-title">
+            The Shibe That <span class="highlight">Conquered Nasdaq</span>
+          </h1>
+          <p class="hero-subtitle">
+            Kimchi made history as the first Shiba Inu to represent the Dogecoin
+            community on the big stage at Nasdaq NYC. Now, she's live on
+            Ethereum.
+          </p>
+          <div class="hero-actions">
+            <a href="https://t.me/kimchieth" target="_blank" class="btn primary-large">Join Telegram</a>
+            <a href="https://dexscreener.com/ethereum/0x1dc8a75d7d3fce51355f21ccd43702c431672221" target="_blank" class="btn secondary-large">View Chart</a>
+          </div>
+          <div class="ca-container">
+            <div class="ca-box">
+              <span class="ca-label">CA:</span>
+              <code class="ca-value" id="ca-text">0x1dc8a75d7d3fce51355f21ccd43702c431672221</code>
+              <button class="copy-btn" id="copy-ca" title="Copy Address">
+                <span class="copy-icon">📋</span>
+              </button>
+            </div>
+            <div class="copy-toast" id="copy-toast">Address Copied!</div>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <img
+            src="./images/kimchi.jpeg"
+            alt="Kimchi at Nasdaq"
+            class="hero-img"
+          />
+        </div>
+      </section>
+
+      <!-- Ticker Tape -->
+      <div class="ticker-tape">
+        <div class="ticker-content">
+          <span>KIMCHI LIVE ON ETHEREUM</span>
+          <span>•</span>
+          <span>NASDAQ REPRESENTATIVE</span>
+          <span>•</span>
+          <span>#CHOOSEMYSHIBE WINNER</span>
+          <span>•</span>
+          <span>JOIN THE PACK</span>
+          <span>•</span>
+          <span>NO TAX</span>
+          <span>•</span>
+          <span>LIQUIDITY BURNT</span>
+          <span>•</span>
+        </div>
+      </div>
+
+      <!-- Story Section -->
+      <section class="story-section">
+        <div class="container">
+          <div class="grid-2">
+            <div class="text-content">
+              <h2 class="section-title">A Historic Journey</h2>
+              <p class="section-desc">
+                From a humble #ChooseMyShibe contest to the bright lights of
+                Times Square. Kimchi joined House of Doge at the @NasdaqExchange
+                in NYC to represent the entire community and celebrate the
+                Dogecoin ETF launch.
+              </p>
+              <div class="stat-grid">
+                <div class="stat-card">
+                  <span class="stat-value">Nasdaq</span>
+                  <span class="stat-label">Appearance</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-value">Winner</span>
+                  <span class="stat-label">#ChooseMyShibe</span>
+                </div>
+              </div>
+            </div>
+            <div class="image-gallery">
+              <div class="glass-card">
+                <img
+                  src="./images/kimchi.jpeg"
+                  alt="Nasdaq Moment"
+                  class="gallery-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chart Section -->
+      <section class="chart-section">
+        <div class="container">
+          <h2 class="section-title text-center">Live Market View</h2>
+          <div class="chart-wrapper">
+            <iframe 
+              id="dexscreener-embed" 
+              title="Dexscreener Chart" 
+              src="https://dexscreener.com/ethereum/0x1dc8a75d7d3fce51355f21ccd43702c431672221?embed=1&theme=dark"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <img src="./images/logo.jpeg" alt="Kimchi" class="footer-logo" />
+              <p>Celebrating the history of Kimchi the Shiba Inu.</p>
+            </div>
+            <div class="footer-links">
+              <a
+                href="https://x.com/houseofdoge/status/2023829975493673208?s=20"
+                target="_blank"
+                >Twitter / X</a
+              >
+              <a href="https://t.me/kimchieth" target="_blank">Telegram</a>
+              <a
+                href="https://dexscreener.com/ethereum/0x1dc8a75d7d3fce51355f21ccd43702c431672221"
+                target="_blank"
+                >Dexscreener</a
+              >
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              &copy; 2026 Kimchi. Not a financial advice. Meme with
+              responsibility.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
